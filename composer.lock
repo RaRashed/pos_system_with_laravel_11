@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ead3b2177c9b5a65c881df95022c6f23",
+    "content-hash": "959ab2d523c4a279c104848d16028793",
     "packages": [
         {
             "name": "brick/math",
@@ -3117,6 +3117,47 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "rarashed/payfast-sdk",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RaRashed/payfast-php.git",
+                "reference": "64c3c5ce6946ce8aba3039b25e02f451381b9812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RaRashed/payfast-php/zipball/64c3c5ce6946ce8aba3039b25e02f451381b9812",
+                "reference": "64c3c5ce6946ce8aba3039b25e02f451381b9812",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RaRashed\\PayFastSdk\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rashed",
+                    "email": "rnrashedrn@gmail.com"
+                }
+            ],
+            "description": "A library for handling payfast payment gateway integration",
+            "support": {
+                "issues": "https://github.com/RaRashed/payfast-php/issues",
+                "source": "https://github.com/RaRashed/payfast-php/tree/main"
+            },
+            "time": "2024-12-01T16:22:59+00:00"
         },
         {
             "name": "symfony/clock",
@@ -7895,7 +7936,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rarashed/payfast-sdk": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
